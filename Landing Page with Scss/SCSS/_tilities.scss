@@ -1,0 +1,107 @@
+.container-fluid {
+    width: 98%;
+    margin: 0% auto;
+}
+
+.container {
+    width: 95%;
+    margin: 0% auto;
+}
+
+.text-wraper {
+    width: 60%;
+    margin: 0px auto;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.mb-5 {
+    margin-bottom: 50px;
+}
+// Buttons
+
+%btn {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px $dark solid;
+
+    &:hover {
+        background-color: darken($color: $light, $amount: 10%);
+        color: lighten($color: $dark, $amount: 10%);
+        outline: 2px solid rgba(0, 0, 0, 0.27);
+    }
+
+    &:active {
+        transform: scale(0.98);
+        background-color: $light;
+        color: $dark;
+    }
+}
+
+.btn {
+    @extend %btn;
+}
+
+.btn-primary {
+    @extend %btn;
+    background-color: $primary;
+    color: $light;
+    border: none;
+
+    &:hover {
+        background-color: lighten($color: $primary, $amount: 10%);
+        color: white;
+    }
+    &:active {
+        outline: #00bcf05d 5px solid;
+    }
+}
+
+.btn-secondary {
+    @extend %btn;
+    background-color: $secondary;
+    color: $light;
+    border: none;
+
+    &:hover {
+        background-color: lighten($color: $secondary, $amount: 10%);
+        color: $light;
+    }
+    &:active {
+        outline: #52575d5a 5px solid;
+    }
+}
+
+// Input
+%input {
+    width: 95%;
+    margin: 10px auto;
+    outline: none;
+    padding: 10px;
+}
+
+.input {
+    @extend %input;
+}
+.r-none {
+    resize: none;
+}
+.input-lg {
+    @extend %input;
+    font-size: 23px;
+}
+.input-md {
+    @extend %input;
+    font-size: 20px;
+}
+.input-sm {
+    @extend %input;
+    font-size: 18px;
+}
+
+// Display
+.d-none {
+    display: inline;
+}

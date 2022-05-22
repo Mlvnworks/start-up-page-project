@@ -1,0 +1,277 @@
+.container-fluid {
+  width: 98%;
+  margin: 0% auto;
+}
+
+.container {
+  width: 95%;
+  margin: 0% auto;
+}
+
+.text-wraper {
+  width: 60%;
+  margin: 0px auto;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.mb-5 {
+  margin-bottom: 50px;
+}
+
+.btn, .btn-primary, .btn-secondary {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px #000 solid;
+}
+
+.btn:hover, .btn-primary:hover, .btn-secondary:hover {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+  outline: 2px solid rgba(0, 0, 0, 0.27);
+}
+
+.btn:active, .btn-primary:active, .btn-secondary:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-primary {
+  background-color: #00bbf0;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #24cfff;
+  color: white;
+}
+
+.btn-primary:active {
+  outline: #00bcf05d 5px solid;
+}
+
+.btn-secondary {
+  background-color: #52575d;
+  color: #fff;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #6a7078;
+  color: #fff;
+}
+
+.btn-secondary:active {
+  outline: #52575d5a 5px solid;
+}
+
+.input, .input-lg, .input-md, .input-sm {
+  width: 95%;
+  margin: 10px auto;
+  outline: none;
+  padding: 10px;
+}
+
+.r-none {
+  resize: none;
+}
+
+.input-lg {
+  font-size: 23px;
+}
+
+.input-md {
+  font-size: 20px;
+}
+
+.input-sm {
+  font-size: 18px;
+}
+
+.d-none {
+  display: inline;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+  background-size: 100%;
+  background-blend-mode: multiply;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+#main-header {
+  color: #fff;
+  padding: 10px;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.116);
+  border-bottom: 1px solid #000;
+}
+
+.qoute-container {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.qoute-container p {
+  background-color: rgba(0, 0, 0, 0.261);
+  padding: 15px;
+  font-size: 2em;
+  border-bottom: #ffd739 5px solid;
+  font-weight: bold;
+  color: #fff;
+  min-width: 300px;
+}
+
+.qoute-container p .cite {
+  text-align: end;
+}
+
+.semi-info {
+  text-align: end;
+  width: 100%;
+}
+
+.semi-info button {
+  margin-bottom: 20px;
+}
+
+.add-info {
+  color: white;
+  font-size: 25px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.main-point {
+  color: #ffd739;
+}
+
+#btn-add {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+#add-set {
+  display: none;
+  position: fixed;
+  width: 450px;
+  right: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  top: 35px;
+  background-color: rgba(0, 0, 0, 0.301);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+#add-set label {
+  color: #fff;
+}
+
+#add-set input,
+#add-set textarea {
+  background-color: rgba(255, 255, 255, 0.377);
+}
+
+#add-set input:focus,
+#add-set textarea:focus {
+  background-color: #fff;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  background-color: rgba(0, 0, 0, 0.227);
+  text-align: end;
+  font-size: 23px;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    background-size: 120%;
+  }
+  header h3 {
+    font-size: 23px;
+  }
+  .qoute-container {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .semi-info {
+    font-size: 18px;
+  }
+  #add-set {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    top: 10px;
+    right: 0;
+  }
+  footer p {
+    font-size: 20px;
+  }
+  footer #date-catcher {
+    font-size: 20px;
+  }
+  footer .add-info span {
+    font-size: 20px;
+  }
+  footer img {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .qoute-container p {
+    font-size: 23px;
+  }
+  .semi-info .add-info {
+    font-size: 16px;
+  }
+  .semi-info button {
+    font-size: 16px;
+  }
+  footer p {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

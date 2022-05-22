@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="SCSS/style.css" />
+        <title>Live With Qoutes</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="main-header">
+            <div class="container-fluid">
+                <h3>Live With <span class="main-point">Qoutes</span></h3>
+            </div>
+        </header>
+        <!-- MAin Section -->
+        <section>
+            <div class="container">
+                <div class="qoute-container">
+                    <div>
+                        <div class="text-wraper">
+                            <p id="qoute-catcher"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add set -->
+        <section id="add-set" class="rounded">
+            <div class="container">
+                <div class="add-set-container">
+                    <label for="">Write Qoute</label>
+                    <textarea
+                        name="qoute"
+                        id="qoute-input"
+                        class="input-sm rounded r-none"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                    <br />
+                    <label for="">Enter image Link</label>
+                    <input
+                        type="text"
+                        class="input rounded input-sm"
+                        id="img-input"
+                    />
+                    <br />
+                    <!-- <label for="">Best For</label>
+                    <select name="" id="best-input" class="input-sm">
+                        <option value="day">day</option>
+                        <option value="night">night</option>
+                    </select> -->
+                    <div>
+                        <button class="btn-secondary rounded" id="cancel-modal">
+                            cancel
+                        </button>
+                        <button class="btn-primary rounded" id="addSet">
+                            done
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="semi-info">
+                <div>
+                    <button id="add-set-btn" class="btn-primary rounded">
+                        +
+                    </button>
+                    <button id="btn-start" class="btn-primary rounded">
+                        Get started
+                    </button>
+                </div>
+                <div class="add-info" id="date-catcher">00:00</div>
+                <div class="add-info">
+                    <span id="temperature"></span>
+                    <span id="description">loading...</span>
+                    <img src="" alt="img" id="img-catcher" />
+                </div>
+            </div>
+            <p>
+                Hi <span class="main-point">Melvin. </span>Today,Your'e on 100%
+                of Your Life!
+            </p>
+        </footer>
+        <script src="jS files/addSet.js"></script>
+        <script src="jS files/changeQoute.js"></script>
+        <script src="main.js"></script>
+        <script src="jS files/getWeather.js"></script>
+    </body>
+</html>
