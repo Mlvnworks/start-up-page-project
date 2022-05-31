@@ -112,6 +112,7 @@ body {
   background-blend-mode: multiply;
   overflow: hidden;
   background-repeat: no-repeat;
+  overflow-y: hidden;
 }
 
 #main-header {
@@ -143,10 +144,6 @@ body {
   font-weight: bold;
   color: #fff;
   min-width: 300px;
-}
-
-.qoute-container p .cite {
-  text-align: end;
 }
 
 .semi-info {
@@ -225,8 +222,7 @@ footer p {
     font-size: 23px;
   }
   .qoute-container {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    margin-left: 0;
   }
   .semi-info {
     font-size: 18px;
@@ -263,6 +259,11 @@ footer p {
 @media only screen and (max-width: 425px) {
   .qoute-container p {
     font-size: 23px;
+    text-align: center;
+    position: absolute;
+    width: 350px;
+    right: 0px;
+    left: 45px;
   }
   .semi-info .add-info {
     font-size: 16px;
@@ -272,6 +273,31 @@ footer p {
   }
   footer p {
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .qoute-container p {
+    font-size: 23px;
+    text-align: center;
+    position: absolute;
+    width: 350px;
+    right: 0px;
+    left: 13px;
+  }
+  #add-set {
+    width: 370px;
+    right: 0;
+    left: 0;
+    padding: 20px;
+  }
+  #add-set input,
+  #add-set textarea {
+    background-color: rgba(255, 255, 255, 0.377);
+  }
+  #add-set input:focus,
+  #add-set textarea:focus {
+    background-color: #fff;
   }
 }
 /*# sourceMappingURL=style.css.map */
