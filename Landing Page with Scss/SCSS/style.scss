@@ -15,7 +15,7 @@ html {
 body {
     box-sizing: unset;
     // background-image: url(https://wallpapercave.com/wp/wp2471726.jpg);
-    background-size: 100vh;
+    background-size: 100%;
     background-blend-mode: multiply;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@ body {
 }
 
 .qoute-container {
-    height: 50vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,6 +91,41 @@ body {
             background-color: #fff;
         }
     }
+}
+
+.search-box-container {
+    width: 990px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    #search-box {
+        // max-width: 890px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.24);
+        outline: none;
+        border: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+
+        &:focus {
+            background-color: #fff;
+        }
+    }
+    #btn-search-container {
+        text-align: start;
+        #search-btn {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            font-size: 1em;
+            max-width: 70px;
+        }
+    }
+}
+
+.glowi {
+    outline: rgba(0, 0, 255, 0.384) solid 5px;
 }
 
 footer {

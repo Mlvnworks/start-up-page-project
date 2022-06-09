@@ -112,7 +112,7 @@ html {
 body {
   -webkit-box-sizing: unset;
           box-sizing: unset;
-  background-size: 100vh;
+  background-size: 100%;
   background-blend-mode: multiply;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -127,7 +127,7 @@ body {
 }
 
 .qoute-container {
-  height: 50vh;
+  height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,6 +201,46 @@ body {
   background-color: #fff;
 }
 
+.search-box-container {
+  width: 990px;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-box-container #search-box {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.24);
+  outline: none;
+  border: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-box-container #search-box:focus {
+  background-color: #fff;
+}
+
+.search-box-container #btn-search-container {
+  text-align: start;
+}
+
+.search-box-container #btn-search-container #search-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 1em;
+  max-width: 70px;
+}
+
+.glowi {
+  outline: rgba(0, 0, 255, 0.384) solid 5px;
+}
+
 footer {
   position: absolute;
   width: 100%;
@@ -257,6 +297,36 @@ footer p {
     background-position: center;
     height: 100vh;
   }
+  .search-box-container {
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .search-box-container #search-box {
+    background-color: rgba(255, 255, 255, 0.24);
+    outline: none;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .search-box-container #search-box:focus {
+    background-color: #fff;
+  }
+  .search-box-container #btn-search-container {
+    text-align: start;
+  }
+  .search-box-container #btn-search-container #search-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 1em;
+    max-width: 70px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -273,6 +343,20 @@ footer p {
   }
   .semi-info button {
     font-size: 16px;
+  }
+  .search-box-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .search-box-container #search-box {
+    max-width: 890px;
+    background-color: rgba(255, 255, 255, 0.24);
+    outline: none;
+    border: none;
+  }
+  .search-box-container #search-box:focus {
+    background-color: #fff;
   }
   footer p {
     font-size: 16px;
